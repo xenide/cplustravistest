@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+# Change this to your needs
+script: ./configure && make
+
+notifications:
+  email:
+    recipients:
+      - lauyy@umich.edu
+    on_success: change
+    on_failure: always
